@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1080</width>
-    <height>500</height>
+    <width>960</width>
+    <height>501</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,23 +18,23 @@
     <rect>
      <x>50</x>
      <y>40</y>
-     <width>181</width>
+     <width>111</width>
      <height>431</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0" columnstretch="0,1,0,0" rowminimumheight="0,0,0,0,0,0" columnminimumwidth="0,0,0,0">
+   <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0" columnstretch="0,1,0" rowminimumheight="0,0,0,0,0,0" columnminimumwidth="0,0,0">
     <property name="leftMargin">
      <number>0</number>
     </property>
     <item row="2" column="2">
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="label_8">
       <property name="text">
        <string>0</string>
       </property>
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="label_1">
       <property name="font">
        <font>
         <pointsize>10</pointsize>
@@ -55,14 +55,14 @@
      </widget>
     </item>
     <item row="0" column="2">
-     <widget class="QLabel" name="label_8">
+     <widget class="QLabel" name="label_6">
       <property name="text">
        <string>0</string>
       </property>
      </widget>
     </item>
     <item row="4" column="2">
-     <widget class="QLabel" name="label_6">
+     <widget class="QLabel" name="label_9">
       <property name="text">
        <string>0</string>
       </property>
@@ -83,7 +83,7 @@
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="label_3">
       <property name="font">
        <font>
         <pointsize>10</pointsize>
@@ -97,7 +97,7 @@
      </widget>
     </item>
     <item row="4" column="1">
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="label_4">
       <property name="font">
        <font>
         <pointsize>10</pointsize>
@@ -111,7 +111,7 @@
      </widget>
     </item>
     <item row="5" column="1">
-     <widget class="QLabel" name="label_9">
+     <widget class="QLabel" name="label_5">
       <property name="font">
        <font>
         <pointsize>10</pointsize>
@@ -142,11 +142,11 @@
     </item>
    </layout>
   </widget>
-  <widget class="QLabel" name="label_11">
+  <widget class="QLabel" name="desc">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>50</y>
+     <x>370</x>
+     <y>70</y>
      <width>599</width>
      <height>29</height>
     </rect>
@@ -168,10 +168,10 @@
   <widget class="QWidget" name="gridLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>100</y>
-     <width>691</width>
-     <height>211</height>
+     <x>250</x>
+     <y>140</y>
+     <width>651</width>
+     <height>181</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
@@ -183,63 +183,63 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QPushButton" name="pushButton_3">
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="3">
-     <widget class="QPushButton" name="pushButton_6">
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QPushButton" name="pushButton">
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
      <widget class="QPushButton" name="pushButton_2">
       <property name="text">
        <string>PushButton</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="2">
-     <widget class="QPushButton" name="pushButton_5">
+    <item row="0" column="3">
+     <widget class="QPushButton" name="pushButton_10">
       <property name="text">
        <string>PushButton</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="4">
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton_1">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
      <widget class="QPushButton" name="pushButton_7">
       <property name="text">
        <string>PushButton</string>
       </property>
      </widget>
     </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="pushButton_13">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </item>
     <item row="1" column="1">
-     <widget class="QPushButton" name="pushButton_8">
+     <widget class="QPushButton" name="pushButton_5">
       <property name="text">
        <string>PushButton</string>
       </property>
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="QPushButton" name="pushButton_9">
+     <widget class="QPushButton" name="pushButton_6">
       <property name="text">
        <string>PushButton</string>
       </property>
      </widget>
     </item>
     <item row="1" column="2">
-     <widget class="QPushButton" name="pushButton_10">
+     <widget class="QPushButton" name="pushButton_8">
       <property name="text">
        <string>PushButton</string>
       </property>
@@ -253,21 +253,21 @@
      </widget>
     </item>
     <item row="1" column="4">
-     <widget class="QPushButton" name="pushButton_12">
+     <widget class="QPushButton" name="pushButton_14">
       <property name="text">
        <string>PushButton</string>
       </property>
      </widget>
     </item>
     <item row="2" column="2">
-     <widget class="QPushButton" name="pushButton_13">
+     <widget class="QPushButton" name="pushButton_9">
       <property name="text">
        <string>PushButton</string>
       </property>
      </widget>
     </item>
     <item row="2" column="3">
-     <widget class="QPushButton" name="pushButton_14">
+     <widget class="QPushButton" name="pushButton_12">
       <property name="text">
        <string>PushButton</string>
       </property>
@@ -282,11 +282,11 @@
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="pushButton_16">
+  <widget class="QPushButton" name="neu">
    <property name="geometry">
     <rect>
-     <x>480</x>
-     <y>410</y>
+     <x>450</x>
+     <y>360</y>
      <width>112</width>
      <height>34</height>
     </rect>
@@ -295,11 +295,11 @@
     <string>Neu</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_17">
+  <widget class="QPushButton" name="close">
    <property name="geometry">
     <rect>
-     <x>690</x>
-     <y>410</y>
+     <x>580</x>
+     <y>360</y>
      <width>112</width>
      <height>34</height>
     </rect>
@@ -307,19 +307,25 @@
    <property name="text">
     <string>Close</string>
    </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
   </widget>
  </widget>
  <resources/>
  <connections>
   <connection>
-   <sender>pushButton_17</sender>
+   <sender>close</sender>
    <signal>clicked()</signal>
    <receiver>Dialog</receiver>
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>759</x>
-     <y>429</y>
+     <x>609</x>
+     <y>409</y>
     </hint>
     <hint type="destinationlabel">
      <x>645</x>
@@ -328,14 +334,14 @@
    </hints>
   </connection>
   <connection>
-   <sender>pushButton_16</sender>
+   <sender>neu</sender>
    <signal>clicked()</signal>
    <receiver>Dialog</receiver>
    <slot>update()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>553</x>
-     <y>419</y>
+     <x>483</x>
+     <y>399</y>
     </hint>
     <hint type="destinationlabel">
      <x>563</x>
