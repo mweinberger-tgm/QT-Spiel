@@ -83,6 +83,8 @@ class Controller(QWidget):
 
         self.Model.newgame()
 
+        self.lastval = 0
+
         self.Dialog.label_10.setText(str(self.Model.games))
         self.Dialog.label_6.setText(str(self.Model.pending))
         self.Dialog.label_7.setText(str(self.Model.true))
@@ -114,7 +116,6 @@ class Controller(QWidget):
 
         if self.Model.pending == 0:
             QMessageBox.about(self, "WOW! SUPER! GRATULIERE!", "Du kannst bis 15 zählen ... :)")
-            self.lastval = 0
             self.new()
 
 """
