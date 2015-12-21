@@ -53,12 +53,6 @@ class Controller(QWidget):
 
         self.new()
 
-        self.Dialog.label_10.setText(str(self.Model.games))
-        self.Dialog.label_6.setText(str(self.Model.pending))
-        self.Dialog.label_7.setText(str(self.Model.true))
-        self.Dialog.label_8.setText(str(self.Model.false))
-        self.Dialog.label_9.setText(str(self.Model.total))
-
         #Unschön, ja :) Aber rennt
         self.Dialog.pushButton_1.clicked.connect(lambda: self.action(self.Dialog.pushButton_1))
         self.Dialog.pushButton_2.clicked.connect(lambda: self.action(self.Dialog.pushButton_2))
@@ -88,6 +82,12 @@ class Controller(QWidget):
     def new(self):
 
         self.Model.newgame()
+
+        self.Dialog.label_10.setText(str(self.Model.games))
+        self.Dialog.label_6.setText(str(self.Model.pending))
+        self.Dialog.label_7.setText(str(self.Model.true))
+        self.Dialog.label_8.setText(str(self.Model.false))
+        self.Dialog.label_9.setText(str(self.Model.total))
 
     """
         Definiert was passiert, wenn ein Button gedrückt ist.
