@@ -1,4 +1,4 @@
-﻿https://github.com/mweinberger-tgm/QT-Spiel.git
+﻿https://github.com/mweinberger-tgm/Qt-Spiel.git
 
 Sourcecode inklusive Commit History
 
