@@ -11,6 +11,9 @@ __version__ = 1.0
 
 class Controller(QWidget):
 
+    """
+        Erstellt das Spiel, verbindet die einzelnen Komponenten miteinander
+    """
     def __init__(self, parent=None):
 
         super().__init__(parent)
@@ -36,6 +39,13 @@ class Controller(QWidget):
             self.Dialog.pushButton_14,
             self.Dialog.pushButton_15
         ]
+
+        counter = 1
+        for button in self.Buttons:
+            button.setText(str(counter))
+            button.setEnabled(True)
+            counter += 1
+
         self.Model = Model.Model()
 
         self.Dialog.neu.clicked.connect(self.new)
@@ -43,7 +53,13 @@ class Controller(QWidget):
 
         self.new()
 
-        #TO-DO!
+        self.Dialog.label_10.setText(str(self.Model.games))
+        self.Dialog.label_6.setText(str(self.Model.pending))
+        self.Dialog.label_7.setText(str(self.Model.true))
+        self.Dialog.label_8.setText(str(self.Model.false))
+        self.Dialog.label_9.setText(str(self.Model.total))
+
+        #Unschön, ja :) Aber rennt
         self.Dialog.pushButton_1.clicked.connect(lambda: self.action(self.Dialog.pushButton_1))
         self.Dialog.pushButton_2.clicked.connect(lambda: self.action(self.Dialog.pushButton_2))
         self.Dialog.pushButton_3.clicked.connect(lambda: self.action(self.Dialog.pushButton_3))
@@ -60,49 +76,46 @@ class Controller(QWidget):
         self.Dialog.pushButton_14.clicked.connect(lambda: self.action(self.Dialog.pushButton_14))
         self.Dialog.pushButton_15.clicked.connect(lambda: self.action(self.Dialog.pushButton_15))
 
+    """
+        Beendet das Programm sauber
+    """
     def kill(self):
         QCoreApplication.instance().quit()
 
+    """
+        Setzt die Werte zurück
+    """
     def new(self):
-
-        for button in self.Buttons:
-            button.setEnabled(True)
 
         self.Model.newgame()
 
-        counter = 1
-        for button in self.Buttons:
-            button.setText(str(counter))
-            counter += 1
+    """
+        Definiert was passiert, wenn ein Button gedrückt ist.
 
-        self.Dialog.label_10.setText(str(self.Model.games))
-        self.Dialog.label_6.setText(str(self.Model.pending))
-        self.Dialog.label_7.setText(str(self.Model.success))
-        self.Dialog.label_8.setText(str(self.Model.fail))
-        self.Dialog.label_9.setText(str(self.Model.total))
-
+        Bei 0 verbleibenden Zahlen wird eine Gratulation ausgesprochen und das
+        Spiel neu gestartet
+    """
     def action(self, button):
 
-        if int(button.text()) > self.lastval:
+        if int(button.text()) == self.lastval+1:
 
             self.Model.success()
             self.lastval += 1
 
             self.Dialog.label_6.setText(str(self.Model.pending))
-            self.Dialog.label_7.setText(str(self.Model.success))
+            self.Dialog.label_7.setText(str(self.Model.true))
             self.Dialog.label_9.setText(str(self.Model.total))
 
         else:
 
             self.Model.fail()
             self.Dialog.label_9.setText(str(self.Model.total))
-            self.Dialog.label_8.setText(str(self.Model.fail))
+            self.Dialog.label_8.setText(str(self.Model.false))
 
         if self.Model.pending == 0:
-            print("HALLO!")
-            q = QMessageBox()
-            q.setWindowTitle("WOW! SUPER! DU KANNST BIS 15 ZÄHLEN!")
-            q.setText("Gratuliere!")
+            QMessageBox.about(self, "WOW! SUPER! GRATULIERE!", "Du kannst bis 15 zählen ... :)")
+            self.lastval = 0
+            self.new()
 
 """
     Starten des Programms
